@@ -27,7 +27,8 @@
 /**************** N A V  B A R ************************/
 nav {
     background-color: var(--primary-color);
-    height: 20vw;
+    height: 10vh;
+    width: auto;
 }
 
 strong {
@@ -38,101 +39,86 @@ strong {
 }
 
 .iconemaison {
-   width: 6vh;
+   width: 13vw;
    padding-right: 5px;
    padding-bottom: 8px;
+
 }
 
 details {
-    width: 4vh;
+    width: 8vw;
 }
 
 .langueicone {
-    width: 9vh;
+    width: 17vw;
 }
 
 /********************* M E D I A  Q U E R Y *******************/
 @media screen and (min-width: 500px) and (max-width: 700px) {
 	/*********** NAV ***********/
-    nav {
-        height: 15vw;
-    }
-
     .iconemaison {
-        width: 10vh;
+        width: 13vw;
         padding-right: 15px;
      }
 
      details {
-        width: 5vh;
+        width: 7vw;
     }
 
     .langueicone {
-        width: 9vh;
+        width: 13vw;
     }
 }
 
 @media screen and (min-width: 700px) and (max-width: 1000px) {
     /*********** NAV ***********/
-    nav {
-        height: 10vw;
-    }
-
     .iconemaison {
-        width: 10vh;
+        width: 10vw;
         padding-right: 15px;
      }
 
      details {
-        width: 5vh;
+        width: 5vw;
     }
 
     .langueicone {
-        width: 9vh;
+        width: 10vw;
     }
 }
 
 @media screen and (min-width: 1000px) and (max-width: 1300px) {
     /*********** NAV ***********/
-    nav {
-        height: 8vw;
-    }
-
     .iconemaison {
-        width: 11vh;
+        width: 8vw;
         padding-right: 25px;
      }
 
      details {
-        width: 6vh;
+        width: 4vw;
     }
 
     .langueicone {
-        width: 12vh;
+        width: 8vw;
     }
 }
 
 @media screen and (min-width: 1300px) and (max-width: 1500px) {
     /*********** NAV ***********/
-    nav {
-        height: 9vw;
-    }
-
     strong {
         font-size: 2.5rem;
     }
 
     .iconemaison {
-        width: 13vh;
+        width: 7vw;
         padding-right: 28px;
      }
 
      details {
-        width: 7.5vh;
+        width: 4vw;
         padding-right: 5px;
     }
 
     .langueicone {
-        width: 13vh;
+        width: 7vw;
     }
 }
