@@ -1,3 +1,27 @@
-body {
-    color: #f76c6c;
+:root{
+background-color: #fffaf4; 
+font-family: 'Quicksand';
+
+}
+
+.menuFooter {
+    position: fixed;
+    bottom: 0;
+    background-color:#50c6aa;
+    padding: 2rem 2rem 0rem 2rem;
+}
+
+footer nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#50c6aa;
+
+}
+
+footer nav a{
+    color: white;
+    font-size: 35px;
+    margin-bottom: 1.5rem;
+    
 }
