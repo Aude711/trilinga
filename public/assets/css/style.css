@@ -1,3 +1,138 @@
-body {
-    color: #f76c6c;
+/*************** C S S  V A R I A B L E S ****************/
+:root{
+    --primary-color: #50C6AA;
+    --font-family-h1: "Rokkitt";
+    --font-family-autre: "Quicksand";
+    --font-color-h1: white;
+}
+
+/*********** G O O G L E  F O N T *************/
+
+/* Rokkit */
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@900&display=swap');
+
+/* Quicksand */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+/**************** A L L  &  B O D Y ************************/
+* {
+	margin: 0;
+	padding: 0%;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+    border-style: none;
+}
+
+/**************** N A V  B A R ************************/
+nav {
+    background-color: var(--primary-color);
+    height: 20vw;
+}
+
+strong {
+    font-family: var(--font-family-h1);
+    color: var(--font-color-h1);
+    font-size: 1.9rem;
+    padding-left: 10px;
+}
+
+.iconemaison {
+   width: 6vh;
+   padding-right: 5px;
+   padding-bottom: 8px;
+}
+
+details {
+    width: 4vh;
+}
+
+.langueicone {
+    width: 9vh;
+}
+
+/********************* M E D I A  Q U E R Y *******************/
+@media screen and (min-width: 500px) and (max-width: 700px) {
+	/*********** NAV ***********/
+    nav {
+        height: 15vw;
+    }
+
+    .iconemaison {
+        width: 10vh;
+        padding-right: 15px;
+     }
+
+     details {
+        width: 5vh;
+    }
+
+    .langueicone {
+        width: 9vh;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+    /*********** NAV ***********/
+    nav {
+        height: 10vw;
+    }
+
+    .iconemaison {
+        width: 10vh;
+        padding-right: 15px;
+     }
+
+     details {
+        width: 5vh;
+    }
+
+    .langueicone {
+        width: 9vh;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1300px) {
+    /*********** NAV ***********/
+    nav {
+        height: 8vw;
+    }
+
+    .iconemaison {
+        width: 11vh;
+        padding-right: 25px;
+     }
+
+     details {
+        width: 6vh;
+    }
+
+    .langueicone {
+        width: 12vh;
+    }
+}
+
+@media screen and (min-width: 1300px) and (max-width: 1500px) {
+    /*********** NAV ***********/
+    nav {
+        height: 9vw;
+    }
+
+    strong {
+        font-size: 2.5rem;
+    }
+
+    .iconemaison {
+        width: 13vh;
+        padding-right: 28px;
+     }
+
+     details {
+        width: 7.5vh;
+        padding-right: 5px;
+    }
+
+    .langueicone {
+        width: 13vh;
+    }
 }
