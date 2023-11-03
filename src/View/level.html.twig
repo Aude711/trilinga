@@ -4,11 +4,14 @@
     <h1>Levels</h1>
 {% endblock %}
 
+
+{% block nav %}
+{% include 'navbar.html.twig' %}
+{% endblock %}
+
 {% block footer %}
   <ul>
     <li><a href="/about">A propos</a></li>
     <li><a href="/login">login</a></li>
   </ul>
-{% block nav %}
-{% include 'navbar.html.twig' %}
 {% endblock %}
