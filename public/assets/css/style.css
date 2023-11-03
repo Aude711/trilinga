@@ -1,9 +1,10 @@
 /*************** C S S  V A R I A B L E S ****************/
 :root{
     --primary-color: #50C6AA;
+    --font-color-h1: white;
+    --background: #FFFAF4;
     --font-family-h1: "Rokkitt";
     --font-family-autre: "Quicksand";
-    --font-color-h1: white;
 }
 
 /*********** G O O G L E  F O N T *************/
@@ -24,11 +25,16 @@
     border-style: none;
 }
 
+body {
+    background-color: var(--background);
+    height: 100vh;
+}
+
 /**************** N A V  B A R ************************/
 nav {
     background-color: var(--primary-color);
-    height: 10vh;
     width: auto;
+    height: 10vh;
 }
 
 strong {
@@ -51,6 +57,30 @@ details {
 
 .langueicone {
     width: 17vw;
+}
+
+/**************** M A I N ************************/
+.tritristart {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+p {
+    font-family: var(--font-family-autre);
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 2rem;
+}
+
+.grid {
+    position: fixed;
+    display: flex;
+    width: 70vw;
+    margin-right: 2.8rem;
+    margin-left: 2.8rem;
+    column-gap: 2rem;
 }
 
 /********************** FOOTER *******************************/
@@ -81,7 +111,8 @@ footer ul li a{
 
 /********************* M E D I A  Q U E R Y *******************/
 @media screen and (min-width: 500px) and (max-width: 700px) {
-	/*********** NAV ***********/
+	
+/*********** NAV ***********/
     .iconemaison {
         width: 13vw;
         padding-right: 15px;
@@ -93,6 +124,16 @@ footer ul li a{
 
     .langueicone {
         width: 13vw;
+    }
+
+/**************** M A I N ************************/
+    .grid {
+        position: fixed;
+        display: flex;
+        width: 50vw;
+        margin-right: 5rem;
+        margin-left: 5rem;
+        column-gap: 3rem;
     }
 }
 
@@ -110,6 +151,16 @@ footer ul li a{
     .langueicone {
         width: 10vw;
     }
+
+    /**************** M A I N ************************/
+    .grid {
+        position: fixed;
+        display: flex;
+        width: 50vw;
+        margin-right: 8.5rem;
+        margin-left: 8.5rem;
+        column-gap: 4rem;
+    }
 }
 
 @media screen and (min-width: 1000px) and (max-width: 1300px) {
@@ -125,6 +176,16 @@ footer ul li a{
 
     .langueicone {
         width: 8vw;
+    }
+
+    /**************** M A I N ************************/
+    .grid {
+        position: fixed;
+        display: flex;
+        width: 45vw;
+        margin-right: 12.3rem;
+        margin-left: 12.3rem;
+        column-gap: 7rem;
     }
 }
 
@@ -146,5 +207,15 @@ footer ul li a{
 
     .langueicone {
         width: 7vw;
+    }
+
+    /**************** M A I N ************************/
+    .grid {
+        position: fixed;
+        display: flex;
+        width: 40vw;
+        margin-right: 15.5rem;
+        margin-left: 15.5rem;
+        column-gap: 7rem;
     }
 }
