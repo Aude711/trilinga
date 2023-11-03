@@ -53,6 +53,32 @@ details {
     width: 17vw;
 }
 
+/********************** FOOTER *******************************/
+
+.menuFooter {
+    position: fixed;
+    bottom: 0;
+    background-color:#50c6aa;
+    padding: 2rem 2rem 0rem 2rem;
+}
+
+footer ul  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#50c6aa;
+}
+
+footer ul li {
+  list-style: none;
+}
+
+footer ul li a{
+    color: white;
+    font-size: 35px;
+    margin-bottom: 1.5rem;
+}
+
 /********************* M E D I A  Q U E R Y *******************/
 @media screen and (min-width: 500px) and (max-width: 700px) {
 	/*********** NAV ***********/
