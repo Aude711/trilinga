@@ -11,7 +11,7 @@ return [
     'level' => ['LevelController', 'index',],
     'quiz' => ['QuizController', 'index',],
     'about' => ['AboutController', 'index',],
-    'login' => ['AuthController', 'index',],
+    'login' => ['LoginController', 'index',],
     'admin' => ['AdminController', 'index',],
     'admin/add' => ['AdminController', 'add',],
     'admin/edit' => ['AdminController', 'edit', ['id']],
