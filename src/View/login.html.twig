@@ -1,6 +1,26 @@
 {% extends 'layout.html.twig' %}
 
 {% block content %}
+
+    <div class="iconetritri">
+         <img src="https://i.goopics.net/djq5ga.png" alt= 'logo trilinga'>
+    </div>
+    <h1>Connecte-toi</h1>
+<main>
+<div>
+     <form>
+        <label for="nom"></label>
+        <input type="text" id="nom" name="nom" placeholder="Nom d'utilisateur">
+        <br>
+
+        <label for="motDePasse"></label>
+        <input type="password" id="motDePasse" name="motDePasse" placeholder="Mot de passe">
+        <br>
+
+        <input type="submit" value="Connexion">
+    </form>
+    </div>
+</main>   
     <h1>Connection</h1>
 {% endblock %}
 
@@ -10,4 +30,3 @@
     <li><a href="/">Start</a></li>
   </ul>
 {% endblock %}
-    
