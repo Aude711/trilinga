@@ -1,5 +1,28 @@
-body {
-    background-color:#F5F5F5 ;
+/*************** C S S  V A R I A B L E S ****************/
+:root{
+    --primary-color: #50C6AA;
+    --font-color-h1: white;
+    --background: #FFFAF4;
+    --font-family-h1: "Rokkitt";
+    --font-family-autre: "Quicksand";
+}
+
+/*********** G O O G L E  F O N T *************/
+
+/* Rokkit */
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@900&display=swap');
+
+/* Quicksand */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+/**************** A L L  &  B O D Y ************************/
+* {
+	margin: 0;
+	padding: 0%;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+    border-style: none;
 }
 
 .iconetritri {

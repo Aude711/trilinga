@@ -2,8 +2,11 @@
 
 namespace App\Controller;
 
-class LoginController extends AbstractController
+class AuthController extends AbstractController
 {
+     /**
+     * List level
+     */
     public function index(): string
     {
         return $this->twig->render('login.html.twig');

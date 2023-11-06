@@ -1,6 +1,16 @@
 {% extends 'layout.html.twig' %}
 
+{% block nav %}
+    {% include 'navbar.html.twig' %}
+{% endblock %}
+
 {% block content %}
     <h1>Quiz</h1>
-    
+{% endblock %}
+
+{% block footer %}
+  <ul>
+    <li><a href="/about">A propos</a></li>
+    <li><a href="/login">login</a></li>
+  </ul>
 {% endblock %}
