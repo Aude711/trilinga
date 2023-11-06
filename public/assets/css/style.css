@@ -6,15 +6,11 @@
     --font-family-h1: "Rokkitt";
     --font-family-autre: "Quicksand";
 }
-
 /*********** G O O G L E  F O N T *************/
-
 /* Rokkit */
 @import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@900&display=swap');
-
 /* Quicksand */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
-
 /**************** A L L  &  B O D Y ************************/
 * {
 	margin: 0;
@@ -25,8 +21,8 @@
     border-style: none;
 }
 
-.iconetritri {
-    display: flex;
+/****************** Login**********************************/
+.iconetritri { display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -89,9 +85,206 @@ input#nom, input#motDePasse{
 }
 
 @media screen and (min-width: 0px) and (max-width: 500px) {
-    
+
     main form {
         width: 80%;
-     }
+    }
 }
 
+
+
+body {
+    background-color: var(--background);
+    height: 100vh;
+}
+
+/**************** N A V  B A R ************************/
+nav {
+    background-color: var(--primary-color);
+    width: auto;
+    height: 10vh;
+}
+
+strong {
+    font-family: var(--font-family-h1);
+    color: var(--font-color-h1);
+    font-size: 1.9rem;
+    padding-left: 10px;
+}
+
+.iconemaison {
+  width: 13vw;
+  padding-right: 5px;
+  padding-bottom: 8px;
+
+}
+
+details {
+    width: 8vw;
+}
+
+.langueicone {
+    width: 17vw;
+}
+
+/**************** M A I N ************************/
+.tritristart {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+p {
+    font-family: var(--font-family-autre);
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 2rem;
+}
+
+.grid {
+    position: fixed;
+    display: flex;
+    width: 70vw;
+    margin-right: 2.8rem;
+    margin-left: 2.8rem;
+    column-gap: 2rem;
+}
+
+/********************** FOOTER *******************************/
+
+.menuFooter {
+    position: fixed;
+    bottom: 0;
+    background-color:#50c6aa;
+    padding: 0rem 2rem 0rem 2rem;
+}
+
+footer ul  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#50c6aa;
+    margin-bottom: 0%;
+}
+
+footer ul li {
+    list-style: none;
+}
+
+footer ul li a{
+    color: white;
+    font-size: 35px;
+    margin-bottom: 1.5rem;
+}
+
+/********************* M E D I A  Q U E R Y *******************/
+@media screen and (min-width: 500px) and (max-width: 700px) {
+
+/*********** NAV ***********/
+    .iconemaison {
+        width: 13vw;
+        padding-right: 15px;
+    }
+
+    details {
+        width: 7vw;
+    }
+
+    .langueicone {
+        width: 13vw;
+    }
+
+/**************** M A I N ************************/
+    .grid {
+        position: fixed;
+        display: flex;
+        width: 50vw;
+        margin-right: 5rem;
+        margin-left: 5rem;
+        column-gap: 3rem;
+    }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+    /*********** NAV ***********/
+    .iconemaison {
+        width: 10vw;
+        padding-right: 15px;
+    }
+
+    details {
+        width: 5vw;
+    }
+
+    .langueicone {
+        width: 10vw;
+    }
+
+    /**************** M A I N ************************/
+    .grid {
+        position: fixed;
+        display: flex;
+        width: 50vw;
+        margin-right: 8.5rem;
+        margin-left: 8.5rem;
+        column-gap: 4rem;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1300px) {
+    /*********** NAV ***********/
+    .iconemaison {
+        width: 8vw;
+        padding-right: 25px;
+    }
+
+    details {
+        width: 4vw;
+    }
+
+    .langueicone {
+        width: 8vw;
+    }
+
+    /**************** M A I N ************************/
+    .grid {
+        position: fixed;
+        display: flex;
+        width: 45vw;
+        margin-right: 12.3rem;
+        margin-left: 12.3rem;
+        column-gap: 7rem;
+    }
+}
+
+@media screen and (min-width: 1300px) and (max-width: 1500px) {
+    /*********** NAV ***********/
+    strong {
+        font-size: 2.5rem;
+    }
+
+    .iconemaison {
+        width: 7vw;
+        padding-right: 28px;
+    }
+
+    details {
+        width: 4vw;
+        padding-right: 5px;
+    }
+
+    .langueicone {
+        width: 7vw;
+    }
+
+    /**************** M A I N ************************/
+    .grid {
+        position: fixed;
+        display: flex;
+        width: 40vw;
+        margin-right: 15.5rem;
+        margin-left: 15.5rem;
+        column-gap: 7rem;
+    }
+}
