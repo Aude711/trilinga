@@ -22,7 +22,7 @@
 }
 
 /****************** Login**********************************/
-.iconetritri { display: flex;
+.icone-tritri { display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -112,7 +112,7 @@ strong {
     padding-left: 10px;
 }
 
-.iconemaison {
+.icone-maison {
   width: 13vw;
   padding-right: 5px;
   padding-bottom: 8px;
@@ -123,7 +123,7 @@ details {
     width: 8vw;
 }
 
-.langueicone {
+.langue-icone {
     width: 17vw;
 }
 
@@ -182,7 +182,7 @@ footer ul li a{
 @media screen and (min-width: 500px) and (max-width: 700px) {
 
 /*********** NAV ***********/
-    .iconemaison {
+    .icone-maison {
         width: 13vw;
         padding-right: 15px;
     }
@@ -191,7 +191,7 @@ footer ul li a{
         width: 7vw;
     }
 
-    .langueicone {
+    .langue-icone {
         width: 13vw;
     }
 
@@ -208,7 +208,7 @@ footer ul li a{
 
 @media screen and (min-width: 700px) and (max-width: 1000px) {
     /*********** NAV ***********/
-    .iconemaison {
+    .icone-maison {
         width: 10vw;
         padding-right: 15px;
     }
@@ -217,7 +217,7 @@ footer ul li a{
         width: 5vw;
     }
 
-    .langueicone {
+    .langue-icone {
         width: 10vw;
     }
 
@@ -234,7 +234,7 @@ footer ul li a{
 
 @media screen and (min-width: 1000px) and (max-width: 1300px) {
     /*********** NAV ***********/
-    .iconemaison {
+    .icone-maison {
         width: 8vw;
         padding-right: 25px;
     }
@@ -243,7 +243,7 @@ footer ul li a{
         width: 4vw;
     }
 
-    .langueicone {
+    .langue-icone {
         width: 8vw;
     }
 
@@ -264,7 +264,7 @@ footer ul li a{
         font-size: 2.5rem;
     }
 
-    .iconemaison {
+    .icone-maison {
         width: 7vw;
         padding-right: 28px;
     }
@@ -274,7 +274,7 @@ footer ul li a{
         padding-right: 5px;
     }
 
-    .langueicone {
+    .langue-icone {
         width: 7vw;
     }
 
