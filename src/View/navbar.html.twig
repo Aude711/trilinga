@@ -1,4 +1,3 @@
-
 <nav>
     <ul>
         <li><strong>Trilinga</strong></li>
@@ -6,11 +5,19 @@
     <ul>
         <li>
             <details role="list" dir="rtl">
-                <summary aria-haspopup="listbox" role="link"><img src= 'https://i.goopics.net/afviha.png'></summary>
-                <ul role="listbox">
-                    <li><a class= "langueicone"><img src= 'https://i.goopics.net/nqn5ke.png'></a></li>
-                    <li><a class= "langueicone"><img src= 'https://i.goopics.net/w5k6pc.png'></a></li>
-                </ul>
+                <summary aria-haspopup="listbox" role="link">
+                    <ul role="listbox">
+                        <li>
+                            {% if language == 1 %}
+                                <img src= 'https://i.goopics.net/afviha.png'>
+                            {% elseif language == 2 %}
+                                <img src= 'https://i.goopics.net/nqn5ke.png'>
+                            {% else %}
+                                <img src= 'https://i.goopics.net/w5k6pc.png'>
+                            {% endif %}
+                        </li>
+                    </ul>
+                </summary>
             </details>
         </li>
         <li><a href="/level"> 
