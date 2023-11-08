@@ -159,21 +159,7 @@ p {
     margin-top: 2rem;
 }
 
-a.beginner {
-    font-family: var(--font-family-autre);
-    background-color: var(--primary-color);
-    border: none;
-    border-radius: 20px;
-}
-
-a.midLevel {
-    font-family: var(--font-family-autre);
-    background-color: var(--primary-color);
-    border: none;
-    border-radius: 20px;
-}
-
-a.advanced {
+.level a {
     font-family: var(--font-family-autre);
     background-color: var(--primary-color);
     border: none;
