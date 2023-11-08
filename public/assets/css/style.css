@@ -102,7 +102,7 @@ body {
     height: 100vh;
 }
 html{
-     background-color: var(--background);
+    background-color: var(--background);
 }
 /**************** N A V  B A R ************************/
 nav {
