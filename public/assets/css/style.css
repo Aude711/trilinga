@@ -19,10 +19,29 @@
 	text-decoration: none;
 	list-style: none;
     border-style: none;
-    /*background-color: var(--background);*/
 }
-.container {
-    padding-top: 0%;
+
+/***********************About**********************************/
+
+.mission {
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    color: black;
+}
+.team {
+    margin-top: 3rem;
+    padding: 1rem 0rem 1rem 0rem;
+    font-size: 1rem;
+    color: black;
+}
+
+div.tritri-about{
+    display: flex;
+    justify-content: center;
+}
+div.tritri-about img{
+    max-width: 20vh;
 }
 
 /****************** Login**********************************/
@@ -94,9 +113,7 @@ body {
     background-color: var(--background);
     height: 100vh;
 }
-html{
-    background-color: var(--background);
-}
+
 /**************** N A V  B A R ************************/
 nav {
     background-color: var(--primary-color);
@@ -172,29 +189,6 @@ p {
     border-radius: 20px;
 }
 
-/***********************About**********************************/
-
-.mission {
-    padding: 0;
-    margin: 0;
-    font-size: 1rem;
-    color: black;
-}
-.team {
-    margin-top: 3rem;
-    padding: 1rem 0rem 1rem 0rem;
-    font-size: 1rem;
-    color: black;
-}
-
-div.tritri-admin{
-    display: flex;
-    justify-content: center;
-}
-div.tritri-admin img{
-    max-width: 20vh;
-}
-
 /********************** FOOTER *******************************/
 
 .menuFooter {
@@ -214,14 +208,12 @@ footer ul  {
 
 footer ul li {
     list-style: none;
-    background-color:#50c6aa;
 }
 
 footer ul li a{
     color: white;
     font-size: 35px;
     margin-bottom: 1.5rem;
-    background-color:#50c6aa;
 }
 
 /********************* M E D I A  Q U E R Y *******************/
