@@ -9,7 +9,8 @@
 return [
     '' => ['HomeController', 'index',],
     'level' => ['LevelController', 'index', ['language']],
-    'quiz' => ['QuizController', 'index',],
+    'quiz' => ['QuizController', 'show', ['language', 'level', 'q']],
+    'congratulation' => ['QuizController', 'congrat',],
     'about' => ['AboutController', 'index',],
     'login' => ['AuthController', 'index',],
     'admin' => ['AdminController', 'index',],

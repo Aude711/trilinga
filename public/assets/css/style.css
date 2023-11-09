@@ -39,7 +39,7 @@ h1 {
 }
 
 main form {
-    background-color: #50C6AA;
+    background-color: var(--primary-color);
     color: black;
     display: flex;
     display: flex;
@@ -57,14 +57,14 @@ main form {
 
 input{
     border-radius: 20px;
-    background-color: #F5F5F5;
+    background-color: var(--background);
     display: flex;
     justify-content: center;
     text-align: center;
 }
 
 input[type=submit]{
-    background-color: #F5F5F5;
+    background-color: var(--background);
     color: black;
     border-radius: 20px;
     width: 50%;
@@ -73,8 +73,9 @@ input[type=submit]{
 }
 
 input[type="submit"]:hover {
-    background-color: #99f4df
+    background-color: #99f4df;
 }
+
 input#nom, input#motDePasse{
     max-width: 80%;
 }
