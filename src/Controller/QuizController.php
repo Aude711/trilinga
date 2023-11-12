@@ -13,4 +13,9 @@ class QuizController extends AbstractController
 
         return $this->twig->render('quiz.html.twig');
     }
+
+    public function showCongrat(): string
+    {
+        return $this->twig->render('congratulation.html.twig');
+    }
 }
