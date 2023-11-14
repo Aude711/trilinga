@@ -28,4 +28,9 @@ class QuizController extends AbstractController
             'levelId' => $levelId
         ]);
     }
+
+    public function showCongrat(): string
+    {
+        return $this->twig->render('congratulation.html.twig');
+    }
 }

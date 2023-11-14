@@ -190,6 +190,14 @@ p {
     border-radius: 20px;
 }
 
+/**************** C O N G R A T U L A T I O N **************************/
+.tritri-congrat {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+    padding-top: 3rem;
+}
+
 /********************** FOOTER *******************************/
 
 .menuFooter {
