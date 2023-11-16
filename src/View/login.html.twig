@@ -2,19 +2,24 @@
 
 {% block content %}
 
+{% for error in errors %}
+<P>{{error}}</P>
+{% endfor %}
+
     <div class="icone-tritri">
-         <img src="https://i.goopics.net/djq5ga.png" alt= 'logo trilinga'>
+        <img src="https://i.goopics.net/djq5ga.png" alt= 'logo trilinga'>
     </div>
     <h1>Connecte-toi</h1>
 <main>
 <div>
-     <form action="" method="POST">
+    <form action="" method="POST">
+    
         <label for="email"></label>
-        <input type="text" id="email" name="email" placeholder="Email">
+        <input type="email" id="email" name="email" placeholder="Email" >
         <br>
 
         <label for="password"></label>
-        <input type="password" id="password" name="password" placeholder="Mot de passe">
+        <input type="password" id="password" name="password" placeholder="Mot de passe" >
         <br>
 
         <input type="submit" value="Connexion">

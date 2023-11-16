@@ -9,27 +9,41 @@ class AuthController extends AbstractController
     /**
      * List level
      */
-
     public function login(): string
     {
+        $errors = [];
+
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             // clean $_POST data
             $data = array_map('trim', $_POST);
             $data = array_map('htmlentities', $data);
 
-            // TODO validations (length, format...)
+            if (empty($data['email'])) {
+                $errors[] = 'Un email est obligatoire pour ce connecter';
+            }
 
-            // if validation is ok, update and redirection
-            $authManager = new AuthManager();
-            $user = $authManager->selectOneByEmail($data['email']);
+            if (empty($data['password'])) {
+                $errors[] = 'Ce champ doit être rempli par le mot de passe';
+            }
 
-            if ($user && password_verify($data['password'], $user['password'])) {
-                $_SESSION['user_id'] = $user['id'];
-                header('Location: /admin');
-                exit();
+            if (!filter_var($data['email'], FILTER_VALIDATE_EMAIL)) {
+                $errors[] = 'Adresse email au mauvais format';
+            }
+            if (empty($errors)) {
+                // TODO validations (length, format...)
+
+                // if validation is ok, update and redirection
+                $authManager = new AuthManager();
+                $user = $authManager->selectOneByEmail($data['email']);
+
+                if ($user && password_verify($data['password'], $user['password'])) {
+                    $_SESSION['user_id'] = $user['id'];
+                    header('Location: /admin');
+                    exit();
+                }
             }
         }
-        return $this->twig->render('login.html.twig');
+        return $this->twig->render('login.html.twig', ['errors' => $errors]);
     }
 
     public function logout()
