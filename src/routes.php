@@ -10,7 +10,7 @@ return [
     '' => ['HomeController', 'index',],
     'level' => ['LevelController', 'index', ['language']],
     'quiz' => ['QuizController', 'show', ['language', 'level', 'q']],
-    'congratulation' => ['QuizController', 'congrat',],
+    'congratulation' => ['QuizController', 'showCongrat',],
     'about' => ['AboutController', 'index',],
     'login' => ['AuthController', 'index',],
     'admin' => ['AdminController', 'index',],

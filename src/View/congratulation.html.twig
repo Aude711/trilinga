@@ -1,14 +1,10 @@
 {% extends 'layout.html.twig' %}
 
 {% block content %}
-    <h1>Félicitations !!!</h1>
-        <img src="https://i.goopics.net/hsc7fu.png" alt= 'logo trilinga'>
-
+<div class="tritri-congrat">
+    <img src='https://i.goopics.net/hsc7fu.png' alt='tritri content'/>
+</div>
+<p> Félicitation tu as terminé ce niveau ! </p>
 {% endblock %}
 
-{% block footer %}
-    <ul>
-        <li><a href="/about">A propos</a></li>
-        <li><a href="/">Start</a></li>
-    </ul>
-{% endblock %}
+{% block javascript %}<script src="assets/main.js"></script>{% endblock %}
