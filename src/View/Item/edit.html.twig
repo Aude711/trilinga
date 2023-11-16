@@ -1,26 +1,7 @@
 {% extends 'layout.html.twig' %}
 
 {% block content %}
-<script src="https://kit.fontawesome.com/70959f304a.js" crossorigin="anonymous"></script>
-
-<body>
-    <form method="POST" action="">
-    <a href="/admin"><i class="fa-solid fa-chevron-left" style="color: #ffffff;">Modifier</i></a> 
-        <div class="list-dropdown">
-        <select name="language">
-        <option disabled selected>Langue</option>
-        {% for language in languages %}
-            <option value="{{language.id}}">{{language.name}}</option>
-        {% endfor %}
-        </select>
-        </div>
-
-        <div class="list-dropdown">
-        <select name="level">
-        <option disabled selected>Niveau</option>
-        {% for level in levels %}
-            <option value="{{level.id}}">{{level.name}}</option>
-        {% endfor %}
-        </select>
-        </div>
+    <h1>Edit item {{ item.title }}</h1>
+    {% include 'Item/_form.html.twig' %}
+    <a href="/items/show?id={{ item.id }}">Back</a>
 {% endblock %}

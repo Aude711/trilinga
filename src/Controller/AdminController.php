@@ -67,6 +67,11 @@ class AdminController extends AbstractController
         return $this->twig->render('Item/add.html.twig', ['languages' => $languages, 'levels' => $levels]);
     }
 
+    public function showContent(): string
+    {
+        return $this->twig->render('Item/contenu.html.twig');
+    }
+
     public function edit(): ?string
     {
         return $this->twig->render('Item/edit.html.twig');
