@@ -19,11 +19,11 @@ class AuthController extends AbstractController
             $data = array_map('htmlentities', $data);
 
             if (empty($data['email'])) {
-                $errors[] = 'Un email est obligatoire pour ce connecter';
+                $errors[] = 'Veuillez renseigner le champ email';
             }
 
             if (empty($data['password'])) {
-                $errors[] = 'Ce champ doit être rempli par le mot de passe';
+                $errors[] = 'Veuillez renseigner le champ mot de passe';
             }
 
             if (!filter_var($data['email'], FILTER_VALIDATE_EMAIL)) {
@@ -40,6 +40,8 @@ class AuthController extends AbstractController
                     $_SESSION['user_id'] = $user['id'];
                     header('Location: /admin');
                     exit();
+                } else {
+                    $errors[] = 'Mot de passe ou Email incorect';
                 }
             }
         }
