@@ -89,13 +89,31 @@ input{
     text-align: center;
 }
 
+label{
+    width: 100%;
+}
+
 input[type=submit]{
     background-color: var(--background);
     color: black;
     border-radius: 20px;
-    width: 50%;
+    width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+.logout{
+    background-color: #F5F5F5;
+    color: black;
+    border-radius: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.logout:hover {
+    background-color: #99f4df
 }
 
 input[type="submit"]:hover {

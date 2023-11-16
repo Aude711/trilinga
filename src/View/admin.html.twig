@@ -7,15 +7,17 @@
     <h1>Admin</h1>
     <div>
         <form>
-            <label for="add"></label>
-            <input type= "button" id="add" name="add" placeholder="Ajouter">
+            <label for="add">
+                <input type="text" id="add" name="add" placeholder="Ajouter">
+            </label>
             <br>
 
-            <label for="modif"></label>
-            <input type= "button" id="modif" name="modif" placeholder="Modifier">
+            <label for="modif">
+                <input type="text" id="modif" name="modif" placeholder="Modifier">
+            </label>
             <br>
 
-            <input type="submit" value="Déconnexion">   
+            <a href="/logout" class="logout">Déconnexion</a>
         </form>
     </div>
 {% endblock %}
