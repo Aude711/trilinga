@@ -120,8 +120,9 @@ input[type=submit]{
     align-items: center;
     block-size: 8rem;
 }
+
 .tritriLuffy{
-    max-width: vh;
+    max-width: 40vh;
 }
 
 input[type="submit"]:hover {
