@@ -5,6 +5,25 @@
 {% endblock %}
 
 {% block content %}
+
+<p>Question n°{{numero}}</p>
+
+{% set index = (numero  - 1) * 3 %}
+
+<h1>{{questions[index].entitled}}</h1>
+
+<p>{{indexQuestion}}</p>
+
+<a href={{'/quiz?language=' ~ languageId  ~ '&level='  ~ levelId  ~ '&q=' ~ next}}>{{questions[index].content}} <img {{ answers.url }}/></a>
+<a href={{'/quiz?language=' ~ languageId  ~ '&level='  ~ levelId  ~ '&q=' ~ next}}>{{questions[index + 1].content}}</a>
+<a href={{'/quiz?language=' ~ languageId  ~ '&level='  ~ levelId  ~ '&q=' ~ next}}>{{questions[index + 2].content}}</a>
+
+
+<button>{{questions[0].content}} <img src="{{ answers.url }}"/></button>
+<button>{{questions[1].content}}</button>
+<button>{{questions[2].content}}</button>
+
+
 {% endblock %}
 
 {% block footer %}
