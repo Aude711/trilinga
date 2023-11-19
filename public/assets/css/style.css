@@ -100,6 +100,7 @@ input[type=submit]{
     align-items: center;
 }
 
+/**************** A D M I N ************************/
 .add, .edit, .logout{
     background-color: #F5F5F5;
     color: black;
@@ -109,10 +110,18 @@ input[type=submit]{
     align-items: center;
 }
 
-
-
 .logout:hover, .add:hover, .edit:hover {
     background-color: #99f4df
+}
+
+.admin-tritri {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    block-size: 8rem;
+}
+.tritriLuffy{
+    max-width: vh;
 }
 
 input[type="submit"]:hover {
