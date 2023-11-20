@@ -25,6 +25,129 @@ html {
     background-color: var(--background);
 }
 
+/***********************About**********************************/
+
+.mission {
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    color: black;
+}
+.team {
+    margin-top: 3rem;
+    padding: 1rem 0rem 1rem 0rem;
+    font-size: 1rem;
+    color: black;
+}
+
+div.tritri-about{
+    display: flex;
+    justify-content: center;
+}
+div.tritri-about img{
+    max-width: 20vh;
+}
+
+/****************** Login**********************************/
+.icone-tritri { display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+} 
+
+h1 {
+    color: black;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+main form {
+    background-color: var(--primary-color);
+    color: black;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: large;
+    font-weight: bold;
+    width: 50%;
+    border-radius: 20px;
+    margin: auto;
+    padding:20px;
+}
+
+input{
+    border-radius: 20px;
+    background-color: var(--background);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+label{
+    width: 100%;
+}
+
+input[type=submit]{
+    background-color: var(--background);
+    color: black;
+    border-radius: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/**************** A D M I N ************************/
+.add, .edit, .logout{
+    background-color: #F5F5F5;
+    color: black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logout:hover, .add:hover, .edit:hover {
+    background-color: #99f4df
+}
+
+.admin-tritri {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    block-size: 8rem;
+}
+
+.tritriLuffy{
+    max-width: 40vh;
+}
+
+input[type="submit"]:hover {
+    background-color: #99f4df;
+}
+
+input#nom, input#motDePasse{
+    max-width: 80%;
+}
+
+@media screen and (min-width: 0px) and (max-width: 500px) {
+
+    main form {
+        width: 80%;
+    }
+}
+
+body {
+    background-color: var(--background);
+    height: 100vh;
+}
+
 /**************** N A V  B A R ************************/
 nav {
     background-color: var(--primary-color);
