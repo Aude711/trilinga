@@ -105,12 +105,13 @@ input[type=submit]{
 
 /**************** A D M I N ************************/
 .add, .edit, .logout{
-    background-color: #F5F5F5;
+    background-color: #ffffff;
     color: black;
     border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border:none;
 }
 
 .logout:hover, .add:hover, .edit:hover {
@@ -316,19 +317,33 @@ a.newGame:hover {
 }
 
 /**************** A D D  P A G E **************************/
+.form-add {
+    width: 70%;
+}
+
 select {
     background-color: white;
     text-align: center;
     justify-content: center;
-    height: 6vh;
-    width: 38vw;
-    border-radius: 40px;
+    height: 8vh;
+    width: 35vw;
+    border-radius: 20px;
 }
 
 .list-dropdown {
     display: flex;
     justify-content: right;
     font-family: var(--font-family-autre);
+}
+
+p {
+    color: black;
+}
+
+[type=file] {
+    display: flex;
+    align-items: center;
+    color: #ff0000;
 }
 
 /***********************About**********************************/
@@ -402,7 +417,7 @@ input[type=submit]{
     background-color: #FFF;
     color: black;
     border-radius: 20px;
-    width: 100%;
+    width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
