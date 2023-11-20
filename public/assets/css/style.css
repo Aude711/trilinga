@@ -279,6 +279,22 @@ button.answer {
     padding-top: 3rem;
 }
 
+/**************** A D D  P A G E **************************/
+select {
+    background-color: white;
+    text-align: center;
+    justify-content: center;
+    height: 6vh;
+    width: 38vw;
+    border-radius: 40px;
+}
+
+.list-dropdown {
+    display: flex;
+    justify-content: center;
+    font-family: var(--font-family-autre);
+}
+
 /********************** FOOTER *******************************/
 
 .menuFooter {
