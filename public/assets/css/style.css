@@ -1,3 +1,491 @@
+/*************** C S S  V A R I A B L E S ****************/
+:root{
+    --primary-color: #50C6AA;
+    --font-color-h1: white;
+    --background: #FFFAF4;
+    --font-family-h1: "Rokkitt";
+    --font-family-autre: "Quicksand";
+}
+/*********** G O O G L E  F O N T *************/
+/* Rokkit */
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@900&display=swap');
+/* Quicksand */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+/**************** A L L  &  B O D Y ************************/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+    border-style: none;
+}
+
+html {
+    background-color: var(--background);
+}
+
+/***********************About**********************************/
+
+.mission {
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    color: black;
+}
+.team {
+    margin-top: 3rem;
+    padding: 1rem 0rem 1rem 0rem;
+    font-size: 1rem;
+    color: black;
+}
+
+div.tritri-about{
+    display: flex;
+    justify-content: center;
+}
+div.tritri-about img{
+    max-width: 20vh;
+}
+
+/****************** Login**********************************/
+.icone-tritri { display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+} 
+
+h1 {
+    color: black;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+main form {
+    background-color: var(--primary-color);
+    color: black;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: large;
+    font-weight: bold;
+    width: 50%;
+    border-radius: 20px;
+    margin: auto;
+    padding:20px;
+}
+
+input{
+    border-radius: 20px;
+    background-color: var(--background);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+label{
+    width: 100%;
+}
+
+input[type=submit]{
+    background-color: var(--background);
+    color: black;
+    border-radius: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/**************** A D M I N ************************/
+.add, .edit, .logout{
+    background-color: #ffffff;
+    color: black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:none;
+}
+
+.logout:hover, .add:hover, .edit:hover {
+    background-color: #99f4df
+}
+
+.admin-tritri {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    block-size: 8rem;
+}
+
+.tritriLuffy{
+    max-width: 40vh;
+}
+
+input[type="submit"]:hover {
+    background-color: #99f4df;
+}
+
+input#nom, input#motDePasse{
+    max-width: 80%;
+}
+
+@media screen and (min-width: 0px) and (max-width: 500px) {
+
+    main form {
+        width: 80%;
+    }
+}
+
 body {
-    color: #f76c6c;
+    background-color: var(--background);
+    height: 100vh;
+}
+
+/**************** N A V  B A R ************************/
+nav {
+    background-color: var(--primary-color);
+    width: auto;
+    height: 8vh;
+}
+
+.icone-maison {
+    display: flex;
+    align-items: center; 
+}
+
+.maison {
+    display: flex;
+    align-items: center; 
+    width: 2.5rem;
+    margin-left: 0.5rem;
+}
+
+strong {
+    font-family: var(--font-family-h1);
+    color: var(--font-color-h1);
+    font-size: 1.9rem;
+    margin-left: 1.5rem;
+    padding-left: 10px;
+}
+
+.chosen-language {
+width: 2.5rem;
+margin-right: 3rem;
+}
+
+/**************** M A I N ************************/
+.tritri-start {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+p {
+    font-family: var(--font-family-autre);
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 1,5rem;
+}
+
+.grid {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.grid img {
+    justify-content: space-around;
+    height: 7rem;
+}
+
+.tritri-level {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.level {
+    display: flex;
+    flex-direction: column;
+    gap: 2.6rem;
+    margin-top: 2rem;
+}
+
+.level a {
+    font-family: var(--font-family-autre);
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 20px;
+}
+
+.level a:hover {
+    background-color: #99f4df;
+}
+
+/**************** Q U I Z ************************/
+#progressBar {
+    background-color: #50C6AA;
+    border-radius: 20px;
+}
+
+.adv-quiz{
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.adv-quiz p {
+    font-size: 1.3rem;
+}
+
+.adv-quiz img{
+    height: 5rem;
+}
+
+.imgQ {
+    max-height: 2rem;
+   max-width: 3rem;
+   border-radius: 1px; 
+}
+
+a#next-question {
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    float: right;
+    color: #000000;
+    font-weight: bold;
+    background-color: #50C6AA;
+    border-radius: 20px; 
+    margin: 1rem; 
+    padding: 0.6rem; 
+    border: none;
+    width: 20%;
+}
+
+button.answer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    flex-direction: column;
+    color: #000000;
+    font-weight: bold;
+    background-color: #FFF;
+    border-radius: 20px; 
+    margin: 0.6rem; 
+    padding: 0.6rem; 
+    border: none;
+    max-height: 120px;
+}
+
+/**************** C O N G R A T U L A T I O N **************************/
+.tritri-congrat {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2rem;
+    padding-top: 3rem;
+}
+
+a.newGame {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    flex-direction: column;    
+    background-color: var(--primary-color);
+    border-radius: 20px;
+    border: none;
+}
+
+a.newGame:hover {
+    background-color: #99f4df;
+}
+
+/**************** A D D  P A G E **************************/
+.form-add {
+    width: 70%;
+}
+
+select {
+    background-color: white;
+    text-align: center;
+    justify-content: center;
+    height: 8vh;
+    width: 35vw;
+    border-radius: 20px;
+}
+
+.list-dropdown {
+    display: flex;
+    justify-content: right;
+    font-family: var(--font-family-autre);
+}
+
+p {
+    color: black;
+}
+
+[type=file] {
+    display: flex;
+    align-items: center;
+    color: #ff0000;
+}
+
+/***********************About**********************************/
+.mission {
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    color: black;
+}
+.team {
+    margin-top: 3rem;
+    padding: 1rem 0rem 1rem 0rem;
+    font-size: 1rem;
+    color: black;
+}
+
+div.tritri-about{
+    display: flex;
+    justify-content: center;
+}
+div.tritri-about img{
+    max-width: 20vh;
+}
+
+/****************** Login**********************************/
+.icone-tritri { display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+} 
+
+h1 {
+    color: black;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+main form {
+    background-color: var(--primary-color);
+    color: black;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: large;
+    font-weight: bold;
+    width: 50%;
+    border-radius: 20px;
+    margin: auto;
+    padding:20px;
+}
+
+input{
+    border-radius: 20px;
+    background-color: #FFF;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+label{
+    width: 100%;
+}
+
+input[type=submit]{
+    background-color: #FFF;
+    color: black;
+    border-radius: 20px;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logout{
+    background-color: #F5F5F5;
+    color: black;
+    border-radius: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.logout:hover {
+    background-color: #99f4df
+}
+
+input[type="submit"]:hover {
+    background-color: #99f4df;
+}
+
+input#nom, input#motDePasse{
+    max-width: 80%;
+}
+
+@media screen and (min-width: 0px) and (max-width: 500px) {
+
+    main form {
+        width: 80%;
+    }
+}
+
+body {
+    background-color: var(--background);
+    height: 100vh;
+}
+
+details {
+    width: 8vw;
+}
+/*
+.langue-icone {
+    width: 5vw;
+} */
+
+/********************** FOOTER *******************************/
+.menuFooter {
+    position: fixed;
+    bottom: 0;
+    background-color:#50c6aa;
+    padding: 0rem 2rem 0rem 2rem;
+}
+
+footer ul  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#50c6aa;
+    margin-bottom: 0%;
+}
+
+footer ul li {
+    list-style: none;
+}
+
+footer ul li a{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 0.5rem;
 }

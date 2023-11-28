@@ -1,6 +1,17 @@
 {% extends 'layout.html.twig' %}
 
+{% block nav %}
+  {% include 'navbar.html.twig' %}
+{% endblock %}
+
 {% block content %}
-    <h1>Hello Wilder !</h1>
-    <p>Find a complete CRUD example on <a href="/items">/items</a> page.</p>
+<div class='tritri-start'>
+    <img src="https://i.goopics.net/djq5ga.png">
+</div>
+    <p>Bienvenue sur Trilinga <br/> Choisis ta langue</p>
+        <div class='grid'>
+            <div><a href="/level?language=1"><img src= "https://i.goopics.net/afviha.png"></a></div>
+            <div><a href="/level?language=2"><img src= "https://i.goopics.net/nqn5ke.png"></a></div>
+            <div><a href="/level?language=3"><img src= "https://i.goopics.net/w5k6pc.png"></a></div>
+        </div>
 {% endblock %}

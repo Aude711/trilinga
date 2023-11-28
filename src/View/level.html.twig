@@ -1,0 +1,24 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+    <div class="tritri-level">
+         <img src="https://i.goopics.net/djq5ga.png" alt= 'logo trilinga'>
+    </div>
+      <p>Choisis ton niveau</p>
+      <div class="level">
+        <a href="/quiz?language={{ language }}&level=1&q=1" role="button">Débutant</a>
+        <a href="/quiz?language={{ language }}&level=2&q=1" role="button">Intermédiaire</a>
+        <a href="/quiz?language={{ language }}&level=3&q=1" role="button">Avancé</a>
+      </div>
+{% endblock %}
+
+{% block nav %}
+{% include 'navbar.html.twig' %}
+{% endblock %}
+
+{% block footer %}
+  <ul>
+    <li><a href="/about">A propos</a></li>
+    <li><a href="/login">login</a></li>
+  </ul>
+{% endblock %}

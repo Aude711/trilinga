@@ -1,0 +1,42 @@
+{% extends 'layout.html.twig' %}
+
+{% block nav %}
+  {% include 'navbar.html.twig' %}
+{% endblock %}
+
+{% block content %}
+
+{% for error in errors %}
+<p>{{error}}</p>
+{% endfor %}
+
+    <div class="icone-tritri">
+        <img src="https://i.goopics.net/djq5ga.png" alt= 'logo trilinga'>
+    </div>
+    <h1>Connecte-toi</h1>
+<main>
+<div>
+    <form action="" method="POST">
+
+        <label for="email">
+          <input type="email" id="email" name="email" placeholder="Email" required>
+        </label>
+        <br>
+
+        <label for="password">
+          <input type="password" id="password" name="password" placeholder="Mot de passe" required>
+        </label>
+        <br>
+
+        <input type="submit" value="Connexion">
+    </form>
+    </div>
+</main>
+{% endblock %}
+
+{% block footer %}
+  <ul>
+    <li><a href="/about">A propos</a></li>
+    <li><a href="/">Start</a></li>
+  </ul>
+{% endblock %}
